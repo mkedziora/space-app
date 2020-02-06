@@ -1,0 +1,42 @@
+{
+  "pilots": [
+    {
+      "id": 1,
+      "firstName": "Lee",
+      "lastName": "Adama",
+      "imageUrl": "/assets/pepe.png"
+    },
+    {
+      "id": 2,
+      "firstName": "Sharon",
+      "lastName": "Valerii",
+      "imageUrl": "/assets/pepe2.png"
+    },
+    {
+      "id": 3,
+      "firstName": "Karl",
+      "lastName": "Ahathon",
+      "imageUrl": "/assets/sanik.png"
+    },
+    {
+      "id": 4,
+      "firstName": "Imię",
+      "lastName": "Nazwisko",
+      "imageUrl": "/assets/default.png"
+    }
+  ],
+  "forbidden-names": [
+    {
+      "name": "Maruda"
+    },
+    {
+      "name": "Ciamajda"
+    },
+    {
+      "name": "Gapcio"
+    },
+    {
+      "name": "Nazwisko"
+    }
+  ]
+}

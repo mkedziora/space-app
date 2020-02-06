@@ -1,0 +1,15 @@
+<h1>Engineers Room</h1>
+<h3>Liczba statków w hangarze: {{shipCount | async}}</h3>
+<form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+  <label class="control-label">Ilość:</label>
+  <input type="number" formControlName="shipCount">
+    <span *ngIf="form.invalid"> WPISZ LICZBĘ 1-5</span>
+  <div class="control-group">
+    <label class="control-label">Typ:</label>
+    <label *ngFor="let spaceShipType of spaceShipTypes">
+      <input type="radio" formControlName="shipType" [value]="spaceShipType.value"/>
+      {{spaceShipType.label}}
+    </label>
+  </div>
+  <button [disabled]="form.invalid || isProducing">Produkuj</button>
+</form>
