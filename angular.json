@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "space-app"
+  "defaultProject": "space-app",
+  "cli": {
+    "analytics": "18499e63-2948-4791-9e7e-c71568c1513f"
+  }
 }
