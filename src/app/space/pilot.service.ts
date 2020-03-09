@@ -29,11 +29,11 @@ export class PilotService {
       return this.createPilot(pilotAttrs);
     }
   }
-  updatePilot(attrs: PilotAttrs): Observable<Pilot> {
+  private updatePilot(attrs: PilotAttrs): Observable<Pilot> {
     return this.http.put<PilotAttrs>(`${environment.apiUrl}/pilots/${attrs.id}`, attrs).pipe(
       map((pilotAttrs) => new Pilot(pilotAttrs)));
   }
-  createPilot(attrs: PilotAttrs) {
+  private createPilot(attrs: PilotAttrs) {
     return this.http.post<PilotAttrs>(`${environment.apiUrl}/pilots`, attrs).pipe(
       map((pilotAttrs) => new Pilot(pilotAttrs)));
   }

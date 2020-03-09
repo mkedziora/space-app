@@ -1,0 +1,30 @@
+.game-area {
+  opacity:1;
+  background-color:#ccc;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width:80%;
+  height:80%;
+  border-style: dotted;
+  cursor: crosshair;
+  border-color: darkorange;
+}
+.crosshair-horizontal {
+  border-bottom: dashed;
+  border-color: darkorange;
+  position: absolute;
+  width: 100%;
+}
+.crosshair-vertical {
+  border-right: dashed;
+  border-color: darkorange;
+  position: absolute;
+  height: 100%;
+}
+img {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+}
