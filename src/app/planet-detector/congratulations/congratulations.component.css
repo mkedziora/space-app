@@ -1,0 +1,19 @@
+.board {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:black;
+  border-style: dotted;
+  border-color: darkorange;
+  text-align: center;
+}
+a{
+  color: white;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+a.active {
+  color: darkorange;
+}
